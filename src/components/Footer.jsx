@@ -1,5 +1,5 @@
 import React from 'react'
-import { FacebookLogo, XLogo, YoutubeLogo, WhatsappLogo, TiktokLogo } from "@phosphor-icons/react";
+import { FacebookLogo, XLogo, YoutubeLogo, TiktokLogo, InstagramLogo } from "@phosphor-icons/react";
 
 const Footer = () => {
   return (
@@ -17,10 +17,10 @@ const Footer = () => {
         <div className='space-y-1.5 md:px-15 lg:px-15' >
           <h2 className='text-lg font-semibold '>Quick Links</h2>
           <ul>
-            <li className='hover:underline cursor-pointer hover:text-amber-400 transition-all duration-100 ease-in-out'>Home</li>
-            <li className='hover:underline cursor-pointer hover:text-amber-400 transition-all duration-100 ease-in-out'>About</li>
-            <li className='hover:underline cursor-pointer hover:text-amber-400 transition-all duration-100 ease-in-out'>Service</li>
-            <li className='hover:underline cursor-pointer hover:text-amber-400 transition-all duration-100 ease-in-out'>Contact</li>
+            <li className='hover:underline cursor-pointer hover:scale-105 transition-all duration-100 ease-in-out'>Home</li>
+            <li className='hover:underline cursor-pointer hover:scale-105 transition-all duration-100 ease-in-out'>About</li>
+            <li className='hover:underline cursor-pointer hover:scale-105 transition-all duration-100 ease-in-out'>Service</li>
+            <li className='hover:underline cursor-pointer hover:scale-105 transition-all duration-100 ease-in-out'>Contact</li>
           </ul>
         </div>
 
@@ -34,25 +34,19 @@ const Footer = () => {
 {/* Socials section */}
         <div className='space-y-1.5 md:px-15 lg:px-15'>
           <h2 className='text-lg font-semibold'>Socials</h2>
-          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105 hover:text-amber-400 transition-all duration-100 ease-in-out'>
+          <div className='flex gap-2'>
+          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105  transition-all duration-100 ease-in-out '>
           <FacebookLogo size={22} weight="bold" />
-          <p>Facebook</p>
           </div>
-          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105 hover:text-amber-400 transition-all duration-100 ease-in-out'>
+          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105  transition-all duration-100 ease-in-out '>
           <XLogo size={22}  weight="bold" />
-          <p>Twitter</p>
           </div>
-          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105 hover:text-amber-400 transition-all duration-100 ease-in-out'>
-          <YoutubeLogo size={22}  weight="fill" />
-          <p>Youtube</p>
+          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105  transition-all duration-100 ease-in-out '>
+          <InstagramLogo size={22}/>
           </div>
-          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105 hover:text-amber-400 transition-all duration-100 ease-in-out'>
-          <WhatsappLogo size={22}/>
-          <p>Whatsapp</p>
-          </div>
-          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105 hover:text-amber-400 transition-all duration-100 ease-in-out'>
+          <div className='flex space-x-1.5 items-center cursor-pointer hover:scale-105  transition-all duration-100 ease-in-out '>
           <TiktokLogo size={22} weight="fill" className='' />
-          <p>Tiktok</p>
+          </div>
           </div>
         </div>
         
@@ -60,8 +54,8 @@ const Footer = () => {
 
       
 {/* footer bottom part*/}
-      <hr className='text-amber-400 mx-18 mt-4'/>
-      <p className='text-center mt-2'>@copyright Pink Tigers 2025</p>
+      <hr className='text-blanchdiamond/60 md:mx-18 lg:mx-18 mx-5  mt-4'/>
+      <p className='text-center mt-2'>Copyright&copy;2025 Pink Tigers </p>
     </footer>
   )
 }
