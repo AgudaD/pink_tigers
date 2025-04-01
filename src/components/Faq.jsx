@@ -45,11 +45,11 @@ const Faq = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-300 rounded-lg p-4 cursor-pointer bg-white shadow-md"
+            className="p-4 cursor-pointer bg-white"
             onClick={() => toggleFAQ(index)}
           >
             <div className="flex justify-between items-center">
-              <h3 className="text-lg font-semibold">{faq.question}</h3>
+              <h3 className="md:text-lg font-semibold">{faq.question}</h3>
               {openIndex === index ? (
                 <ChevronUp className="w-5 h-5 text-gray-500" />
               ) : (
@@ -59,6 +59,7 @@ const Faq = () => {
             {openIndex === index && (
               <p className="mt-2 text-gray-600">{faq.answer}</p>
             )}
+            <hr className="opacity-20 mt-4" />
           </div>
         ))}
       </div>
