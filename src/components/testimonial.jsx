@@ -24,7 +24,7 @@ const Testimonial = () => {
   return (
     <div className='px-[12%] py-[2rem]'>
       <h2 className='text-[2rem] text-center text-teal-700'>TESTIMONIALS</h2>
-      <div className='grid grid-cols-3 gap-[2rem]'>
+      <div className='grid md:grid-cols-3 grid-cols-1 gap-[2rem]'>
       {testimonies.map(testimony => (
         <div className='bg-teal-700 p-[1rem] rounded-[0.5rem] flex flex-col justify-between cursor-pointer' key={testimony.id}>
           <h2 className='italic text-white pb-[0.5rem]'>{testimony.attestation}</h2>
