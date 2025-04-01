@@ -3,7 +3,7 @@ import { FacebookLogo, XLogo, YoutubeLogo, TiktokLogo, InstagramLogo } from "@ph
 
 const Footer = () => {
   return (
-    <footer className="bg-black/60 text-white p-5 h-fit">
+    <footer className="bg-black/80 text-white p-5 h-fit mt-24">
 
 {/* Footer top part */}
       <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-3 mx-5'>

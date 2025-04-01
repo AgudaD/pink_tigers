@@ -23,10 +23,10 @@ const Testimonial = () => {
   ]
   return (
     <div className='px-[12%] py-[2rem]'>
-      <h2 className='text-[2rem] text-center text-teal-700'>TESTIMONIALS</h2>
-      <div className='grid md:grid-cols-3 grid-cols-1 gap-[2rem]'>
+      <h2 className='text-[2rem] text-center'>TESTIMONIALS</h2>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] mt-8'>
       {testimonies.map(testimony => (
-        <div className='bg-teal-700 p-[1rem] rounded-[0.5rem] flex flex-col justify-between cursor-pointer' key={testimony.id}>
+        <div className='bg-black/80 p-[1rem] rounded-[0.5rem] flex flex-col justify-between cursor-pointer' key={testimony.id}>
           <h2 className='italic text-white pb-[0.5rem]'>{testimony.attestation}</h2>
           <div className='flex items-center gap-[1rem]'>
             <img src={testimony.img} alt="images" className='w-[3rem] rounded-full h-[3rem] bg-cover bg-center'/>
