@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Testimonial from './components/testimonial'
 import Herosection from './components/Herosection'
 import Faq from './components/Faq'
+import About from './components/About'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Faq />
       <Testimonial />
       <Footer/>
+      <About/>
     </div>
   )
 }
