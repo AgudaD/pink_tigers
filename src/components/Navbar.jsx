@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { Menu } from "lucide-react";
 
@@ -32,35 +33,35 @@ const Navbar = () => {
       </div>
 
       <ul className="md:flex items-center gap-[1rem] text-white font-semibold hidden">
-        <li className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
+        <Link to={"/"} className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
           Home
-        </li>
-        <li className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
+        </Link>
+        <Link to={"/services"} className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
           Services
-        </li>
-        <li className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
+        </Link>
+        <Link to={"/about"} className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
           About
-        </li>
-        <li className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
+        </Link>
+        <Link to={"/contact"} className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
           Contact
-        </li>
+        </Link>
       </ul>
 
       {hidden && (
         <div className="h-fit w-29 bg-white text-black absolute right-0 p-1 top-12">
           <ul className="font-semibold space-y-6">
-            <li className="px-3 cursor-pointer hover:border-b-white hover:border-b-1 w-max transition duration-150">
+            <Link to={"/"} className="px-3 cursor-pointer hover:border-b-white hover:border-b-1 w-max transition duration-150">
               Home
-            </li>
-            <li className="px-3 cursor-pointer hover:border-b-white hover:border-b-1 w-max transition duration-150">
+            </Link>
+            <Link to={"/services"} className="px-3 cursor-pointer hover:border-b-white hover:border-b-1 w-max transition duration-150">
               Services
-            </li>
-            <li className="px-3 cursor-pointer hover:border-b-white hover:border-b-1 w-max transition duration-150">
+            </Link>
+            <Link to={"/about"} className="px-3 cursor-pointer hover:border-b-white hover:border-b-1 w-max transition duration-150">
               About
-            </li>
-            <li className="px-3 cursor-pointer hover:border-b-white hover:border-b-1 w-max transition duration-150">
+            </Link>
+            <Link to={"/contact"} className="px-3 cursor-pointer hover:border-b-white hover:border-b-1 w-max transition duration-150">
               Contact
-            </li>
+            </Link>
           </ul>
         </div>
       )}
