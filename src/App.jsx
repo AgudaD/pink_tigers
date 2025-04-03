@@ -11,6 +11,7 @@ function App() {
     <div>
       <Navbar />
       <Herosection />
+      <Contact />
       <Faq />
       <Testimonial />
       <Footer/>
