@@ -36,8 +36,8 @@ const Navbar = () => {
         <Link to={"/"} className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
           Home
         </Link>
-        <Link to={"/services"} className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
-          Services
+        <Link to={"/products"} className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
+          Products
         </Link>
         <Link to={"/about"} className="cursor-pointer hover:text-white transition duration-150 hover:border-b-1 hover:border-b-white">
           About
